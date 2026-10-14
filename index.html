@@ -93,6 +93,7 @@
       <ul class="hidden items-center gap-10 text-sm text-ink/70 lg:flex">
         <li><a href="#marca" class="transition hover:text-ink">La marca</a></li>
         <li><a href="#coleccion" class="transition hover:text-ink">Colección</a></li>
+        <li><a href="#aromas" class="transition hover:text-ink">Aromas</a></li>
         <li><a href="#beneficios" class="transition hover:text-ink">Experiencia</a></li>
         <li><a href="#testimonios" class="transition hover:text-ink">Opiniones</a></li>
         <li><a href="#faq" class="transition hover:text-ink">Preguntas</a></li>
@@ -113,6 +114,7 @@
       <ul class="flex flex-col gap-1 text-lg">
         <li><a href="#marca" class="mobile-link block rounded-xl px-3 py-3 hover:bg-beige">La marca</a></li>
         <li><a href="#coleccion" class="mobile-link block rounded-xl px-3 py-3 hover:bg-beige">Colección</a></li>
+        <li><a href="#aromas" class="mobile-link block rounded-xl px-3 py-3 hover:bg-beige">Aromas</a></li>
         <li><a href="#beneficios" class="mobile-link block rounded-xl px-3 py-3 hover:bg-beige">Experiencia</a></li>
         <li><a href="#testimonios" class="mobile-link block rounded-xl px-3 py-3 hover:bg-beige">Opiniones</a></li>
         <li><a href="#faq" class="mobile-link block rounded-xl px-3 py-3 hover:bg-beige">Preguntas</a></li>
@@ -331,7 +333,7 @@
             Dos formas de llenar tu casa <span class="font-semibold">de tu aroma</span>.
           </h2>
           <p class="mt-6 text-base leading-relaxed text-ink/60 sm:text-lg">
-            Elegí cómo querés vivirlo: un perfume constante que acompaña tus días, o una bruma instantánea para cada momento. Los dos vienen en distintos aromas.
+            Elegí cómo querés vivirlo: un perfume constante que acompaña tus días, o una bruma instantánea para cada momento. Los dos vienen en nuestros tres aromas: Coco Vanille, Limón y Jazmín.
           </p>
         </div>
 
@@ -352,7 +354,7 @@
               <ul class="mt-5 space-y-2 text-sm text-ink/70">
                 <li class="flex gap-3"><i class="fa-solid fa-check mt-1 text-gold" aria-hidden="true"></i> Ideal para livings, dormitorios y recibidores</li>
                 <li class="flex gap-3"><i class="fa-solid fa-check mt-1 text-gold" aria-hidden="true"></i> Frasco de vidrio ámbar que decora por sí solo</li>
-                <li class="flex gap-3"><i class="fa-solid fa-check mt-1 text-gold" aria-hidden="true"></i> Disponible en distintos aromas</li>
+                <li class="flex gap-3"><i class="fa-solid fa-check mt-1 text-gold" aria-hidden="true"></i> En Coco Vanille, Limón y Jazmín</li>
               </ul>
               <div class="mt-auto pt-7">
                 <a href="#coleccion" class="inline-flex w-full items-center justify-center gap-2 rounded-full bg-ink px-6 py-4 text-sm font-medium text-cream transition hover:bg-ink/85">
@@ -377,7 +379,7 @@
               <ul class="mt-5 space-y-2 text-sm text-ink/70">
                 <li class="flex gap-3"><i class="fa-solid fa-check mt-1 text-gold" aria-hidden="true"></i> Para ambientes, cortinas, almohadones y sábanas</li>
                 <li class="flex gap-3"><i class="fa-solid fa-check mt-1 text-gold" aria-hidden="true"></i> Rinde cientos de aplicaciones</li>
-                <li class="flex gap-3"><i class="fa-solid fa-check mt-1 text-gold" aria-hidden="true"></i> Disponible en distintos aromas</li>
+                <li class="flex gap-3"><i class="fa-solid fa-check mt-1 text-gold" aria-hidden="true"></i> En Coco Vanille, Limón y Jazmín</li>
               </ul>
               <div class="mt-auto pt-7">
                 <a href="#coleccion" class="inline-flex w-full items-center justify-center gap-2 rounded-full bg-ink px-6 py-4 text-sm font-medium text-cream transition hover:bg-ink/85">
@@ -388,17 +390,42 @@
           </article>
         </div>
 
-        <!-- Aroma destacado -->
-        <div class="reveal mt-10 flex flex-col items-center gap-6 rounded-[2rem] bg-kraft/25 px-6 py-8 text-center sm:flex-row sm:px-10 sm:text-left">
-          <img src="assets/logo-manos-oscuro.png" alt="" class="h-12 w-auto shrink-0" width="256" height="142" loading="lazy" />
-          <div class="flex-1">
-            <p class="text-[11px] font-medium uppercase tracking-widest2 text-taupe">Aroma destacado</p>
-            <p class="mt-2 text-xl font-semibold">Coco Vanille</p>
-            <p class="mt-1 text-sm leading-relaxed text-ink/65">La dulzura cremosa del coco y la calidez de la vainilla. Un abrazo que se respira, en difusor o en spray.</p>
+        <!-- Aromas -->
+        <div id="aromas" class="mt-24 scroll-mt-28">
+          <div class="reveal flex flex-col items-center text-center">
+            <img src="assets/logo-manos-oscuro.png" alt="" class="h-10 w-auto" width="256" height="142" loading="lazy" />
+            <p class="mt-6 text-[11px] font-medium uppercase tracking-widest2 text-gold">Nuestros aromas</p>
+            <h3 class="mt-4 max-w-2xl text-2xl font-light leading-tight tracking-tight sm:text-4xl">
+              Tres aromas, <span class="font-semibold">tres estados de ánimo</span>.
+            </h3>
+            <p class="mt-4 max-w-xl text-base leading-relaxed text-ink/60">Cada uno disponible en difusor de varillas y en spray.</p>
           </div>
-          <a href="#faq" class="inline-flex shrink-0 items-center gap-2 text-sm font-medium underline underline-offset-8">
-            ¿Qué aroma elijo? <i class="fa-solid fa-arrow-right text-xs" aria-hidden="true"></i>
-          </a>
+
+          <div class="mt-12 grid gap-6 md:grid-cols-3">
+            <article class="reveal flex flex-col rounded-[2rem] bg-kraft/20 p-8">
+              <span class="h-14 w-14 rounded-full bg-gradient-to-br from-[#F4EBDD] to-[#D9C2A0] shadow-soft ring-4 ring-cream" aria-hidden="true"></span>
+              <h4 class="mt-6 text-xl font-semibold">Coco Vanille</h4>
+              <p class="mt-1 text-xs font-medium uppercase tracking-[0.2em] text-taupe">Dulce · Cremoso · Envolvente</p>
+              <p class="mt-4 flex-1 text-sm leading-relaxed text-ink/65">La suavidad del coco y la calidez de la vainilla en un abrazo que se respira. Convierte cualquier rincón en un refugio acogedor.</p>
+              <p class="mt-6 border-t border-ink/10 pt-4 text-xs text-ink/55"><span class="font-semibold text-ink/75">Ideal para:</span> livings, dormitorios y tardes de manta y café.</p>
+            </article>
+
+            <article class="reveal flex flex-col rounded-[2rem] bg-kraft/20 p-8">
+              <span class="h-14 w-14 rounded-full bg-gradient-to-br from-[#FBF3C8] to-[#E3CC5E] shadow-soft ring-4 ring-cream" aria-hidden="true"></span>
+              <h4 class="mt-6 text-xl font-semibold">Limón</h4>
+              <p class="mt-1 text-xs font-medium uppercase tracking-[0.2em] text-taupe">Fresco · Luminoso · Vibrante</p>
+              <p class="mt-4 flex-1 text-sm leading-relaxed text-ink/65">Una ráfaga cítrica que despierta los sentidos y llena la casa de luz. La sensación de limpieza y energía de una mañana de sol.</p>
+              <p class="mt-6 border-t border-ink/10 pt-4 text-xs text-ink/55"><span class="font-semibold text-ink/75">Ideal para:</span> cocinas, baños y espacios de trabajo.</p>
+            </article>
+
+            <article class="reveal flex flex-col rounded-[2rem] bg-kraft/20 p-8">
+              <span class="h-14 w-14 rounded-full bg-gradient-to-br from-[#FFFFFF] to-[#EDE6F0] shadow-soft ring-4 ring-cream" aria-hidden="true"></span>
+              <h4 class="mt-6 text-xl font-semibold">Jazmín</h4>
+              <p class="mt-1 text-xs font-medium uppercase tracking-[0.2em] text-taupe">Floral · Delicado · Sereno</p>
+              <p class="mt-4 flex-1 text-sm leading-relaxed text-ink/65">El perfume blanco y elegante de las flores de jazmín en una noche de verano. Calma, romanticismo y un toque de sofisticación.</p>
+              <p class="mt-6 border-t border-ink/10 pt-4 text-xs text-ink/55"><span class="font-semibold text-ink/75">Ideal para:</span> dormitorios, vestidores y momentos de descanso.</p>
+            </article>
+          </div>
         </div>
       </div>
     </section>
@@ -538,17 +565,17 @@
             <li class="rounded-2xl border border-cream/15 bg-cream/10 p-5 text-cream backdrop-blur-md">
               <p class="text-xs font-medium tracking-widest2 text-gold-light">01</p>
               <p class="mt-2 text-sm font-semibold">Mañanas que inspiran</p>
-              <p class="mt-1 text-xs leading-relaxed text-cream/65">Notas cítricas para empezar con energía.</p>
+              <p class="mt-1 text-xs leading-relaxed text-cream/65">Limón: notas cítricas para empezar con energía.</p>
             </li>
             <li class="rounded-2xl border border-cream/15 bg-cream/10 p-5 text-cream backdrop-blur-md">
               <p class="text-xs font-medium tracking-widest2 text-gold-light">02</p>
               <p class="mt-2 text-sm font-semibold">Tardes de encuentro</p>
-              <p class="mt-1 text-xs leading-relaxed text-cream/65">Aromas cálidos que reciben a quienes querés.</p>
+              <p class="mt-1 text-xs leading-relaxed text-cream/65">Coco Vanille: calidez para recibir a quienes querés.</p>
             </li>
             <li class="rounded-2xl border border-cream/15 bg-cream/10 p-5 text-cream backdrop-blur-md">
               <p class="text-xs font-medium tracking-widest2 text-gold-light">03</p>
               <p class="mt-2 text-sm font-semibold">Noches de calma</p>
-              <p class="mt-1 text-xs leading-relaxed text-cream/65">Fragancias suaves para desconectar.</p>
+              <p class="mt-1 text-xs leading-relaxed text-cream/65">Jazmín: un floral sereno para desconectar.</p>
             </li>
           </ol>
         </div>
@@ -597,7 +624,7 @@
               </h3>
               <div class="faq-panel" id="faq-2" role="region" aria-labelledby="faq-btn-2">
                 <div class="overflow-hidden">
-                  <p class="pb-6 pr-12 leading-relaxed text-ink/60">Para livings y espacios sociales recomendamos notas cálidas y amaderadas; para dormitorios, aromas florales y suaves; para baños y cocinas, fragancias frescas y cítricas. Si tenés dudas, escribinos y te asesoramos de forma personalizada.</p>
+                  <p class="pb-6 pr-12 leading-relaxed text-ink/60">Para livings y espacios de encuentro recomendamos Coco Vanille, cálido y envolvente; para dormitorios y momentos de descanso, Jazmín, floral y sereno; para cocinas, baños y lugares de trabajo, Limón, fresco y luminoso. Si tenés dudas, escribinos y te asesoramos de forma personalizada.</p>
                 </div>
               </div>
             </div>
@@ -723,6 +750,7 @@
             <ul class="mt-5 space-y-3 text-sm text-ink/60">
               <li><a href="#coleccion" class="hover:text-ink">Difusores de varillas</a></li>
               <li><a href="#coleccion" class="hover:text-ink">Aromatizadores en spray</a></li>
+              <li><a href="#aromas" class="hover:text-ink">Nuestros aromas</a></li>
             </ul>
           </div>
           <div>

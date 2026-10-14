@@ -24,13 +24,14 @@
         extend: {
           colors: {
             cream: '#FAF7F2',
-            ink: '#141210',
+            ink: '#101820',        // Pantone Black 6 C
             beige: '#EFE7DC',
-            sand: '#D9C8B0',
+            sand: '#D7CAB0',       // Pantone 14-1108 Wood Ash
             taupe: '#8A7D6E',
-            gold: '#B8975A',
+            gold: '#9D7446',       // Pantone 17-1128 Bone Brown
+            amber: '#A66646',      // Pantone 17-1147 Amber Brown
             kraft: '#B19471',
-            'gold-light': '#D4BC8A',
+            'gold-light': '#CFAE84',
           },
           fontFamily: {
             sans: ['"Plus Jakarta Sans"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
@@ -143,7 +144,7 @@
 
           <h1 class="text-[2.6rem] font-light leading-[1.05] tracking-tight sm:text-6xl lg:text-[4.4rem]">
             Fragancias que transforman espacios en
-            <span class="font-semibold italic text-gold">experiencias</span>.
+            <span class="font-semibold italic text-amber">experiencias</span>.
           </h1>
 
           <p class="mt-7 max-w-xl text-base leading-relaxed text-ink/65 sm:text-lg">
@@ -246,30 +247,59 @@
         <div class="reveal order-1 lg:order-2">
           <p class="text-[11px] font-medium uppercase tracking-widest2 text-gold">Nuestra esencia</p>
           <h2 class="mt-5 text-3xl font-light leading-tight tracking-tight sm:text-5xl">
-            Creemos que un hogar <span class="font-semibold">se recuerda</span> por cómo se siente.
+            Un perfume que <span class="font-semibold">te recuerda a casa</span>.
           </h2>
           <div class="mt-8 space-y-5 text-base leading-relaxed text-ink/65 sm:text-lg">
             <p>
-              The Nicho nació de una idea simple: los aromas tienen el poder de devolvernos a un lugar, a una persona, a un momento. Un perfume puede convertir una sala cualquiera en ese rincón al que siempre querés volver.
+              En Nicho vas a encontrar mucho más que aromatizadores y difusores: un perfume distinto, un perfume que te recuerda a casa. Un balance perfecto entre confort y exclusividad.
             </p>
             <p>
-              Por eso creamos fragancias de autor y objetos de diseño pensados para convivir con tu decoración, no para esconderse en ella. Cada pieza es un pequeño ritual de bienestar: encender, respirar, quedarse.
+              Creemos que los aromas tienen el poder de devolvernos a un lugar, a una persona, a un momento. Por eso creamos fragancias pensadas para convivir con tu decoración, no para esconderse en ella.
             </p>
           </div>
 
-          <div class="mt-10 grid gap-6 sm:grid-cols-3">
+          <p class="mt-10 text-[11px] font-medium uppercase tracking-widest2 text-taupe">Nuestra identidad</p>
+          <div class="mt-5 grid gap-6 sm:grid-cols-2">
             <div class="border-l border-gold/40 pl-4">
-              <p class="text-sm font-semibold">Diseño</p>
-              <p class="mt-1 text-sm text-ink/55">Objetos que embellecen cada ambiente.</p>
+              <p class="text-sm font-semibold">Exclusividad accesible</p>
+              <p class="mt-1 text-sm text-ink/55">Aromas de autor, pensados para disfrutarse todos los días.</p>
             </div>
             <div class="border-l border-gold/40 pl-4">
-              <p class="text-sm font-semibold">Bienestar</p>
-              <p class="mt-1 text-sm text-ink/55">Calma y confort en tu día a día.</p>
+              <p class="text-sm font-semibold">Calidad artesanal</p>
+              <p class="mt-1 text-sm text-ink/55">Cada producto se hace a mano, con cuidado y en pequeños lotes.</p>
             </div>
             <div class="border-l border-gold/40 pl-4">
-              <p class="text-sm font-semibold">Sensorialidad</p>
-              <p class="mt-1 text-sm text-ink/55">Aromas que se vuelven memoria.</p>
+              <p class="text-sm font-semibold">Diseño minimalista y sofisticado</p>
+              <p class="mt-1 text-sm text-ink/55">Frascos ámbar y etiquetas kraft que suman a cualquier ambiente.</p>
             </div>
+            <div class="border-l border-gold/40 pl-4">
+              <p class="text-sm font-semibold">Experiencias a través de los aromas</p>
+              <p class="mt-1 text-sm text-ink/55">Momentos que se recuerdan por cómo se sienten.</p>
+            </div>
+          </div>
+
+          <!-- Paleta de marca -->
+          <div class="mt-10 rounded-[1.5rem] border border-ink/10 bg-white/60 p-6">
+            <p class="text-[11px] font-medium uppercase tracking-widest2 text-taupe">Nuestros colores</p>
+            <p class="mt-2 text-sm leading-relaxed text-ink/65">Negro, madera y ámbar: tonos que nos recuerdan la sensación de hogar, sin perder un perfil alto.</p>
+            <ul class="mt-5 grid grid-cols-2 gap-4 sm:grid-cols-4">
+              <li class="flex items-center gap-3 sm:flex-col sm:items-start">
+                <span class="h-10 w-10 shrink-0 rounded-full bg-ink ring-1 ring-ink/10" aria-hidden="true"></span>
+                <span class="text-xs leading-snug"><span class="block font-semibold">Black 6 C</span><span class="text-ink/50">Pantone</span></span>
+              </li>
+              <li class="flex items-center gap-3 sm:flex-col sm:items-start">
+                <span class="h-10 w-10 shrink-0 rounded-full bg-gold ring-1 ring-ink/10" aria-hidden="true"></span>
+                <span class="text-xs leading-snug"><span class="block font-semibold">Bone Brown</span><span class="text-ink/50">17-1128 TCX</span></span>
+              </li>
+              <li class="flex items-center gap-3 sm:flex-col sm:items-start">
+                <span class="h-10 w-10 shrink-0 rounded-full bg-sand ring-1 ring-ink/10" aria-hidden="true"></span>
+                <span class="text-xs leading-snug"><span class="block font-semibold">Wood Ash</span><span class="text-ink/50">14-1108 TCX</span></span>
+              </li>
+              <li class="flex items-center gap-3 sm:flex-col sm:items-start">
+                <span class="h-10 w-10 shrink-0 rounded-full bg-amber ring-1 ring-ink/10" aria-hidden="true"></span>
+                <span class="text-xs leading-snug"><span class="block font-semibold">Amber Brown</span><span class="text-ink/50">17-1147 TCX</span></span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
